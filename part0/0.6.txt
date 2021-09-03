@@ -1,0 +1,9 @@
+title 0.6: New note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over browser:
+The POST request contains the new note 
+as JSON-data containing 
+both the content of the note.
+end note
