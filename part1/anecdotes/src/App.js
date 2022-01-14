@@ -25,13 +25,12 @@ const App = () => {
       [selected]: votes[selected] ? votes[selected] + 1 : 1  
     }
     setVotes(newVotes);
-    getPopular();
+    getPopular(newVotes);
   }
 
-  const getPopular = () => {
-    var mostPopular = Object.keys(votes).reduce((a, b) => votes[a] > votes[b] ? a : b, 0);
-    setPopular({[mostPopular]: votes[mostPopular] ? votes[mostPopular] + 1 : 1});
-    console.log(popular)
+  const getPopular = (newVotes) => {
+    var mostPopular = Object.keys(newVotes).reduce((a, b) => newVotes[a] > newVotes[b] ? a : b, null);
+    setPopular({[mostPopular]: newVotes[mostPopular] ? newVotes[mostPopular] : 1});
   }
 
   return (
