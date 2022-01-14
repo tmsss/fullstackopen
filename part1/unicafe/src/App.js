@@ -1,5 +1,3 @@
-// https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14
-
 import React, { useState } from 'react'
 
 const StatisticLine = props => (
@@ -69,8 +67,6 @@ const App = () => {
       <Button handleClick={() => setValue('neutral')} text="neutral" />
       <Button handleClick={() => setValue('bad')} text="bad" />
       <Statistics clicks={clicks} />
-
-      
     </div>
   )
 }
