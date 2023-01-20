@@ -1,0 +1,2 @@
+Ongoing: https://fullstackopen.com/en/part2/rendering_a_collection_modules
+submissions: https://studies.cs.helsinki.fi/stats/courses/fullstackopen/submissions
